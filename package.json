@@ -1,5 +1,5 @@
 {
-  "name": "scrivito-accordion",
+  "name": "scrivito-accessible-accordion",
   "version": "1.0.2",
   "description": "An accordion React Component for the Scrivito CMS.",
   "main": "index.js",
