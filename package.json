@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdwp/scrivito-accordion.git"
+    "url": "git+https://github.com/mdwp/scrivito-accessible-accordion.git"
   },
   "keywords": [
     "scrivito",
@@ -21,9 +21,9 @@
   "author": "mdwp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mdwp/scrivito-accordion/issues"
+    "url": "https://github.com/mdwp/scrivito-accessible-accordion/issues"
   },
-  "homepage": "https://github.com/mdwp/scrivito-accordion#readme",
+  "homepage": "https://github.com/mdwp/scrivito-accessible-accordion#readme",
   "dependencies": {
     "react-accessible-accordion": "^2.4.5"
   },
