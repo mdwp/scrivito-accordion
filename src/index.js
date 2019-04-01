@@ -2,6 +2,7 @@ import * as Scrivito from 'scrivito';
 import * as React from 'react';
 import "./AccordionItemWidgetEditingConfig";
 import "./AccordionItemWidgetClass";
+import "./AccordionWidgetClass";
 
 import {
   Accordion,
@@ -10,13 +11,6 @@ import {
   AccordionItemBody,
 
 } from 'react-accessible-accordion';
-
-const AccordionWidget = Scrivito.provideWidgetClass('AccordionWidget', {
-  attributes: {
-    items: ['widgetlist', { only: 'AccordionItemWidget' }],
-
-  },
-});
 
 Scrivito.provideEditingConfig('AccordionWidget', {
   title: 'Accordion',
@@ -32,8 +26,6 @@ Scrivito.provideEditingConfig('AccordionWidget', {
 
   ],
 });
-
-
 
 Scrivito.provideComponent("AccordionWidget", ({ widget }) => {
   const items = widget.get('items');
@@ -68,6 +60,4 @@ Scrivito.provideComponent("AccordionWidget", ({ widget }) => {
 }
 )
 
-
-export default AccordionWidget;
 
