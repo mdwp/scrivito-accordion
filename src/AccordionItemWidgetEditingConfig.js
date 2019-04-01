@@ -1,7 +1,6 @@
 import * as Scrivito from 'scrivito';
 
 Scrivito.provideEditingConfig('AccordionItemWidget', {
-
     title: 'Accordion Item',
     attributes: {
 
@@ -19,4 +18,3 @@ Scrivito.provideEditingConfig('AccordionItemWidget', {
     ],
 
 });
-

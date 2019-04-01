@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
-import InPlaceEditingPlaceholder from '../../Components/InPlaceEditingPlaceholder';
+
 import {
   Accordion,
   AccordionItem,
@@ -11,13 +11,13 @@ import {
 Scrivito.provideComponent("AccordionWidget", ({ widget }) => {
   const items = widget.get('items');
 
-  if (!items.length) {
+  /*if (!items.length) {
     return (
       <InPlaceEditingPlaceholder center={true}>
         Create Accordion Items in widget properties.
         </InPlaceEditingPlaceholder>
     );
-  }
+  }*/
 
   const list = items.map((item, index) =>
     <AccordionItem key={index}>
