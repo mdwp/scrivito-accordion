@@ -4,8 +4,9 @@ import * as Scrivito from 'scrivito';
 import {
   Accordion,
   AccordionItem,
-  AccordionItemTitle,
-  AccordionItemBody,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel
 } from 'react-accessible-accordion';
 
 Scrivito.provideComponent("AccordionWidget", ({ widget }) => {
@@ -21,14 +22,18 @@ Scrivito.provideComponent("AccordionWidget", ({ widget }) => {
 
   const list = items.map((item, index) =>
     <AccordionItem key={index}>
-      <AccordionItemTitle>
-        <h3>{item.get('title')}</h3>
-      </AccordionItemTitle>
-      <AccordionItemBody>
+      <AccordionItemHeading>
+        <AccordionItemButton>
+          {item.get('title')}
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel>
         <p>{item.get('text')}</p>
-      </AccordionItemBody>
+      </AccordionItemPanel>
     </AccordionItem>
   );
+
+
 
   return (
     <Accordion>
