@@ -3,6 +3,10 @@
 
 An accordion React Component/Scrivito widget for the Scrivito CMS that let you store an anchor ID.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/mdwp/scrivito-accessible-accordion/master/accordion-screenshot.png)
+
 ## Installation
 
 Open your terminal.
