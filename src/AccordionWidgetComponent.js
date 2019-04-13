@@ -12,13 +12,14 @@ import {
 Scrivito.provideComponent("AccordionWidget", ({ widget }) => {
   const items = widget.get('items');
 
-  /*if (!items.length) {
+  if (!items.length && Scrivito.isInPlaceEditingActive()) {
     return (
-      <InPlaceEditingPlaceholder center={true}>
-        Create Accordion Items in widget properties.
-        </InPlaceEditingPlaceholder>
+        <h4 className="text-center">
+          Create Accordion Items in widget properties.
+        </h4>
     );
-  }*/
+  }
+
 
   const list = items.map((item, index) =>
     <AccordionItem key={index}>
