@@ -1,4 +1,4 @@
-# Scrivito Accordion
+# Scrivito Accessible Accordion
 [![CMS: Scrivito](https://img.shields.io/badge/CMS-Scrivito-brightgreen.svg)](https://scrivito.com) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 An accordion React Component/Scrivito widget for the Scrivito CMS that let you store an anchor ID.
@@ -13,36 +13,23 @@ Open your terminal.
 
 `$ cd` to your Scrivito project
 
-```
-$ npm install scrivito-accordion
+```shell
+$ npm install scrivito-accessible-accordion
 ```
 
 Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
 
 Add this line to your index.js:
 
-```
-import "scrivito-accordion";
-```
-
-Also add the styling of the widget to your app. This can be done by either loading it via `css-loader` (e.g. in `index.js` or `Widgets/index.js`):
-
-```
-import "scrivito-accordion/index.css";
+```js
+import "scrivito-accessible-accordion";
 ```
 
-Or by including the styling to your style sheets (e.g. in `index.scss`):
-
-```scss
-@import "~scrivito-accordion/index.css";
-```
-
-Also add the styling for react-accessible-accordeon a dependencie of this widget.
+Also add the styling for react-accessible-accordeon a dependency of this widget.
 
 ```scss
 @import "~react-accessible-accordion/dist/fancy-example.css";
 ```
-
 
 ## Features
 The Scrivito Headline Widget has one extra feature compared to the *normal* headline Widget.
@@ -63,7 +50,7 @@ npm install file:<path to build folder>
 e.g.
 
 ```
-npm install file:../scrivito-accordion/build/
+npm install file:../scrivito-accessible-accordion/build/
 ```
 
 To publish the package:
