@@ -32,33 +32,10 @@ Also add the styling for react-accessible-accordeon a dependency of this widget.
 ```
 
 ## Features
-The Scrivito Headline Widget has one extra feature compared to the *normal* headline Widget.
-It can store an anchor ID. The Widget should be used in conjunction with our Scrivito Advanced Button widget which offers a link to anchors and smooth scrolling.
+An accordion widget, useful for FAQ's.
 
-## Development
+## Widget properties
 
-With `npm run build` you can build the package into `build/`.
-
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
-
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-accessible-accordion/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
-
-## Check code quality
-
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
+In the widget properties you can set:
+- Accordion items
+- Title and text per item
